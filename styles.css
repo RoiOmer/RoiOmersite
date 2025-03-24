@@ -137,8 +137,8 @@ body, html {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px; /* Space between buttons */
-  flex-wrap: wrap; /* Ensures they wrap on smaller screens */
+  gap: 8px; /* Space between buttons */
+  flex-wrap: nowrap; /* Prevents wrapping on most screens */
 }
 
 /* Buttons */
@@ -147,11 +147,11 @@ body, html {
   background: linear-gradient(45deg, #ff00ff, #ff4500, #ffcc00, #00ff00, #00ffff, #0000ff, #8a2be2);
   background-size: 400%;
   color: #ffffff;
-  padding: 8px 18px; /* Smaller buttons */
+  padding: 10px 14px; /* Scaled down for mobile */
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  font-size: 14px; /* Smaller text */
+  font-size: 13px; /* Smaller text for mobile */
   transition: all 0.4s ease-in-out;
   position: relative;
   overflow: hidden;
@@ -164,6 +164,21 @@ body, html {
   background-position: right center;
   transform: scale(1.05);
   box-shadow: 0 0 16px rgba(255, 255, 0, 0.8), 0 0 24px rgba(0, 255, 255, 0.9);
+}
+
+/* Responsive Fix: Ensure Buttons Stay Next to Each Other */
+@media (max-width: 420px) {
+  .button-container {
+    flex-wrap: wrap; /* Allows wrapping only on very small screens */
+    justify-content: center;
+  }
+  
+  .whatsapp-booking, .whatsapp-group {
+    width: 45%; /* Adjusts size for smaller screens */
+    text-align: center;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
 }
 
 
