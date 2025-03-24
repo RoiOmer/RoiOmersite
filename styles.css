@@ -172,9 +172,11 @@ body, html {
 
 @media (max-width: 480px) {
   .button-container {
-    margin-top: 20vh; /* Moves buttons down, but not too much */
+    position: relative; /* Keeps the buttons inside the flow */
+    margin-top: 30px; /* Moves them slightly down */
   }
 }
+
 
 
 
