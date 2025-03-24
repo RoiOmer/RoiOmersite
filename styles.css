@@ -172,7 +172,7 @@ body, html {
 
 @media (max-width: 480px) {
   .button-container {
-    margin-top: 50vh; /* Push buttons down (adjust this value if needed) */
+    margin-top: 25vh; /* Push buttons down (adjust this value if needed) */
   }
 }
 
