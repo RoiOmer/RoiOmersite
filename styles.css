@@ -172,10 +172,16 @@ body, html {
 
 @media (max-width: 480px) {
   .button-container {
-    position: relative; /* Keeps the buttons inside the flow */
-    margin-top: 30px; /* Moves them slightly down */
+    position: fixed; /* Keeps it in place */
+    bottom: 12vh; /* Moves it up from the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 }
+
 
 
 
