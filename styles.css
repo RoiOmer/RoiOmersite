@@ -172,14 +172,10 @@ body, html {
 
 @media (max-width: 480px) {
   .button-container {
-    position: fixed;
-    bottom: 8vh; /* Moves buttons up from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    margin-top: 50vh; /* Push buttons down (adjust this value if needed) */
   }
+}
+
 
   .whatsapp-booking, .whatsapp-group {
     font-size: 12px;
