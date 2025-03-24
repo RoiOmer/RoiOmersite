@@ -132,28 +132,39 @@ body, html {
 }
 
 
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between buttons */
+  flex-wrap: wrap; /* Ensures they wrap on smaller screens */
+}
+
 /* Buttons */
 .whatsapp-group, .whatsapp-booking {
   display: inline-block;
   background: linear-gradient(45deg, #ff00ff, #ff4500, #ffcc00, #00ff00, #00ffff, #0000ff, #8a2be2);
   background-size: 400%;
   color: #ffffff;
-  padding: 12px 25px;
-  margin: 15px;
+  padding: 8px 18px; /* Smaller buttons */
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
-  transition: all 0.5s ease-in-out;
+  font-size: 14px; /* Smaller text */
+  transition: all 0.4s ease-in-out;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(0, 255, 255, 0.8);
+  box-shadow: 0 0 8px rgba(255, 0, 255, 0.8), 0 0 16px rgba(0, 255, 255, 0.8);
+  white-space: nowrap; /* Prevents text wrapping */
 }
 
 .whatsapp-group:hover, .whatsapp-booking:hover {
   background-position: right center;
-  transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(0, 255, 255, 0.9);
+  transform: scale(1.05);
+  box-shadow: 0 0 16px rgba(255, 255, 0, 0.8), 0 0 24px rgba(0, 255, 255, 0.9);
 }
+
 
 /* Animations */
 @keyframes roiDrop {
