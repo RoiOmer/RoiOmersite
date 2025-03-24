@@ -170,26 +170,15 @@ body, html {
   box-shadow: 0 0 16px rgba(255, 255, 0, 0.8), 0 0 24px rgba(0, 255, 255, 0.9);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 1024px) and (min-width: 600px) { 
   .button-container {
-    position: fixed; /* Keeps it in place */
-    bottom: 12vh; /* Moves it up from the bottom */
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: center;
+    bottom: 15vh; /* Moves buttons up for better positioning */
   }
-}
-
-
-
-
 
   .whatsapp-booking, .whatsapp-group {
-    font-size: 12px;
-    padding: 10px 14px;
-    min-width: 120px;
+    font-size: 14px; /* Slightly larger for better readability */
+    padding: 12px 18px; /* Adjust button size */
+    min-width: 150px; /* Wider buttons for better tapability */
   }
 }
 
