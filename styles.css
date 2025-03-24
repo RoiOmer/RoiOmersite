@@ -1,0 +1,168 @@
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://images.unsplash.com/photo-1570284613060-766c33850e00?q=80&w=3870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+
+/* Dark Theme for the main page */
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8); /* Dark background for main content */
+}
+
+/* Hide main page initially */
+.hidden {
+  display: none;
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+#loading-text {
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.roi {
+  color: white;
+  position: relative;
+  animation: roiDrop 1.5s ease-in-out forwards;
+}
+
+.omer {
+  color: white;
+  position: relative;
+  animation: omerRise 1.5s ease-in-out forwards;
+}
+
+/* Logo */
+.logo h1 {
+  font-size: 40px;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Bio Section */
+.bio-section {
+  margin-top: 100px;
+}
+
+.bio {
+  font-size: 18px;
+  width: 80%;
+  margin: 20px auto;
+  max-width: 800px;
+  color: white;
+}
+/* Social Media Icons Section at the Bottom */
+.social-icons {
+  position: fixed;  /* Fix position at the bottom */
+  bottom: 20px;  /* Position from the bottom */
+  left: 50%;  /* Center horizontally */
+  transform: translateX(-50%);  /* Correct the horizontal centering */
+  display: flex;
+  justify-content: center;
+  gap: 10px;  /* Space between icons */
+}
+
+.social-btn {
+  color: white;
+  font-size: 14px;  /* Smaller icon size */
+  padding: 5px;  /* Smaller padding */
+  border-radius: 50%;  /* Circular buttons */
+  transition: transform 0.3s, color 0.3s, background-color 0.3s;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);  /* Slight shadow */
+}
+
+.social-btn:hover {
+  transform: scale(1.1);  /* Slightly increase size on hover */
+  background-color: rgba(255, 255, 255, 0.1);  /* Slight white background on hover */
+}
+
+/* Custom Color for Each Social Media Icon */
+.soundcloud {
+  background-color: #FF5500;  /* SoundCloud orange */
+}
+
+.spotify {
+  background-color: #1DB954;  /* Spotify green */
+}
+
+.apple {
+  background-color: #333333;  /* Apple dark gray */
+}
+
+.instagram {
+  background-color: #E4405F;  /* Instagram red-pink */
+}
+
+/* Additional Styling for Icons */
+.social-btn i {
+  transition: color 0.3s;
+}
+
+.social-btn:hover i {
+  color: white;  /* Change icon color to white on hover */
+}
+
+
+
+
+
+/* Buttons */
+.whatsapp-group, .whatsapp-booking {
+  display: inline-block;
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400%;
+  color: white;
+  padding: 12px 25px;
+  margin: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-group:hover, .whatsapp-booking:hover {
+  background-position: right center;
+  transform: scale(1.1);
+}
+
+/* Animations */
+@keyframes roiDrop {
+  from { top: -50px; opacity: 0; }
+  to { top: 0; opacity: 1; }
+}
+
+@keyframes omerRise {
+  from { bottom: -50px; opacity: 0; }
+  to { bottom: 0; opacity: 1; }
+}
