@@ -69,16 +69,27 @@ body, html {
 
 /* Bio Section */
 .bio-section {
-  margin-top: 100px;
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 15px rgba(255, 0, 100, 0.5);
+}
+.bio-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+.bio {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
 }
 
-.bio {
-  font-size: 18px;
-  width: 80%;
-  margin: 20px auto;
-  max-width: 800px;
-  color: white;
-}
 /* Social Media Icons Section at the Bottom */
 .social-icons {
   position: fixed;  /* Fix position at the bottom */
@@ -211,6 +222,22 @@ body {
   height: 100vh;
 }
 
+.parallax {
+    height: 300px; /* Adjust to take more space */
+    background: url('your-trippy-background.jpg') center/cover fixed;
+    filter: blur(3px);
+    animation: moveParallax 10s infinite alternate ease-in-out;
+}
+@keyframes moveParallax {
+    from {
+        background-position: center top;
+    }
+    to {
+        background-position: center bottom;
+    }
+}
+
+
 .glitch {
   font-size: 2rem;
   font-weight: bold;
@@ -225,5 +252,19 @@ body {
   0% { text-shadow: 2px 2px red, -2px -2px blue; }
   50% { text-shadow: -2px -2px red, 2px 2px blue; }
   100% { text-shadow: 2px -2px red, -2px 2px blue; }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    color: white;
+}
+h1.glitch {
+    font-size: 3rem;
+    margin-top: 50px;
+    text-align: center;
+}
+#main-container {
+    padding-bottom: 100px; /* Prevent too much space */
 }
 
