@@ -170,23 +170,21 @@ body, html {
   box-shadow: 0 0 16px rgba(255, 255, 0, 0.8), 0 0 24px rgba(0, 255, 255, 0.9);
 }
 
-/* Force Side-by-Side on Mobile */
 @media (max-width: 480px) {
   .button-container {
-    margin-top: 20px; /* Moves the buttons down */
+    position: absolute;
+    bottom: 10vh; /* Moves buttons up from the bottom (adjust if needed) */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
 
   .whatsapp-booking, .whatsapp-group {
     font-size: 12px;
     padding: 8px 10px;
     min-width: 120px;
-  }
-}
-
-  .whatsapp-booking, .whatsapp-group {
-    font-size: 12px;
-    padding: 8px 10px;
-    min-width: 120px; /* Ensures both buttons have enough width */
   }
 }
 
