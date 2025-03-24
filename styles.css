@@ -192,3 +192,38 @@ body, html {
   from { bottom: -50px; opacity: 0; }
   to { bottom: 0; opacity: 1; }
 }
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0, #8a2be2);
+  background-size: 300% 300%;
+  animation: gradientAnimation 10s infinite alternate ease-in-out;
+}
+
+.parallax {
+  background: url('your-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.glitch {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-block;
+  animation: glitchEffect 0.7s infinite;
+}
+
+@keyframes glitchEffect {
+  0% { text-shadow: 2px 2px red, -2px -2px blue; }
+  50% { text-shadow: -2px -2px red, 2px 2px blue; }
+  100% { text-shadow: 2px -2px red, -2px 2px blue; }
+}
+
