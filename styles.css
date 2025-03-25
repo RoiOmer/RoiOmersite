@@ -198,22 +198,18 @@ body, html {
 }
 
 @media (min-width: 1025px) {
-    .button-container {
-        transform: translateY(-50px); /* Moves the buttons up by 50px */
-    }
-}
-
-@media (min-width: 1025px) {
     #main-container {
         position: relative;
     }
     .button-container {
         position: absolute;
-        bottom: 20vh; /* Adjust this value (e.g., 20vh or 15vh) as needed */
+        bottom: 20vh; /* Adjust this value as needed */
         left: 50%;
-        transform: translateX(-50%);
+        /* Combine both translations: -50% for horizontal centering, -50px to move it up further */
+        transform: translate(-50%, -50px);
     }
 }
+
 
 
 
