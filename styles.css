@@ -191,15 +191,14 @@ body, html {
     #main-container {
         position: relative;
     }
+
     .button-container {
         position: absolute;
-        bottom: 20vh; /* Adjust this value as needed */
+        bottom: 5vh;  /* Move them up from the bottom by 5% of the viewport height */
         left: 50%;
-        /* Combine both translations: -50% for horizontal centering, -50px to move it up further */
-        transform: translate(-50%, -50px);
+        transform: translateX(-50%);  /* Keep it centered horizontally */
     }
 }
-
 
 
 
