@@ -200,8 +200,6 @@ body, html {
     }
 }
 
-
-
 /* Animations */
 @keyframes roiDrop {
   from { top: -50px; opacity: 0; }
@@ -213,39 +211,39 @@ body, html {
   to { bottom: 0; opacity: 1; }
 }
 
-/*@keyframes gradientAnimation {
+@keyframes moveParallax {
+  from {
+    background-position: center top;
+  }
+  to {
+    background-position: center bottom;
+  }
+}
+
+/* Gradient animation (uncomment to enable gradient animation) */
+@keyframes gradientAnimation {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
 body {
-  background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0, #8a2be2);
+  font-family: 'Poppins', sans-serif;
+  background: black;
+  color: white;
+  /* Gradient background (uncomment to enable gradient animation) */
+  /* background: linear-gradient(45deg, #ff0080, #ff8c00, #40e0d0, #8a2be2);
   background-size: 300% 300%;
-  animation: gradientAnimation 10s infinite alternate ease-in-out;
+  animation: gradientAnimation 10s infinite alternate ease-in-out; */
 }
 
-.parallax {
-  background: url('your-image.jpg') no-repeat center center fixed;
-  background-size: cover;
-  height: 100vh;
+h1.glitch {
+  font-size: 3rem;
+  margin-top: 50px;
+  text-align: center;
+  /* Apply glitch effect */
+  animation: glitchEffect 0.7s infinite;
 }
-
-.parallax {
-    height: 300px; /* Adjust to take more space 
-    background: url('your-trippy-background.jpg') center/cover fixed;
-    filter: blur(3px);
-    animation: moveParallax 10s infinite alternate ease-in-out;
-}
-@keyframes moveParallax {
-    from {
-        background-position: center top;
-    }
-    to {
-        background-position: center bottom;
-    }
-}
-
 
 .glitch {
   font-size: 2rem;
@@ -263,18 +261,15 @@ body {
   100% { text-shadow: 2px -2px red, -2px 2px blue; }
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background: black;
-    color: white;
+/* Parallax effect for background */
+.parallax {
+  background: url('your-trippy-background.jpg') center/cover fixed;
+  filter: blur(3px);
+  height: 100vh; /* Set to full viewport height */
+  animation: moveParallax 10s infinite alternate ease-in-out;
 }
-h1.glitch {
-    font-size: 3rem;
-    margin-top: 50px;
-    text-align: center;
-}
+
+/* Main container padding adjustment */
 #main-container {
-    padding-bottom: 100px;
-} 
-
-
+  padding-bottom: 100px;
+}
