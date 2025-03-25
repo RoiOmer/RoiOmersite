@@ -203,6 +203,20 @@ body, html {
     }
 }
 
+@media (min-width: 1025px) {
+    #main-container {
+        position: relative; /* Ensure the main container is a positioning context */
+    }
+    .button-container {
+        position: absolute;
+        bottom: 100px; /* Adjust this value to move the buttons up */
+        left: 50%;
+        transform: translateX(-50%);
+        width: auto;
+    }
+}
+
+
 /* Animations */
 @keyframes roiDrop {
   from { top: -50px; opacity: 0; }
