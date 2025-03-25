@@ -199,10 +199,10 @@ body, html {
 
 @media (min-width: 1025px) {
     .button-container {
-        margin-top: 20px; /* Adjust this value to move the buttons up */
+        position: relative;
+        top: -50px; /* Adjust this value as needed */
     }
 }
-
 /* Animations */
 @keyframes roiDrop {
   from { top: -50px; opacity: 0; }
