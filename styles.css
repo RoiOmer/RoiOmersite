@@ -73,22 +73,23 @@ body, html {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
-    background: none !important;
-    border: none !important;
-    box-shadow: none !important;
+    color: white;  /* Change this to any color you like */
 }
 
 .bio-section h2 {
     font-size: 2rem;
     margin-bottom: 10px;
-    background: none !important;
+    /* Optionally override the heading color */
+    color: white;
 }
 
 .bio {
     font-size: 1.2rem;
     line-height: 1.6;
-    background: none !important;
+    /* Optionally override the paragraph text color */
+    color: white;
 }
+
 
 
 
