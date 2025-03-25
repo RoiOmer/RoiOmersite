@@ -205,16 +205,16 @@ body, html {
 
 @media (min-width: 1025px) {
     #main-container {
-        position: relative; /* Ensure the main container is a positioning context */
+        position: relative;
     }
     .button-container {
         position: absolute;
-        bottom: 100px; /* Adjust this value to move the buttons up */
+        bottom: 20vh; /* Adjust this value (e.g., 20vh or 15vh) as needed */
         left: 50%;
         transform: translateX(-50%);
-        width: auto;
     }
 }
+
 
 
 /* Animations */
