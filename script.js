@@ -74,5 +74,5 @@ document.addEventListener("DOMContentLoaded", function() {
     setTimeout(() => {
         document.getElementById("loading-screen").style.display = "none";
         document.getElementById("main-container").classList.remove("hidden");
-    }, 1800);
+    }, 2250);
 });
